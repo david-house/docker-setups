@@ -29,11 +29,17 @@ This will generate a influxdb.conf file in your host file system. You can skip t
 
 ### Run the Container
 There are several option flags used, here's what each of them do:
+
 -p maps host port to container port like this ```-p host:container```
+
 -v (first one) maps host config file to container config file
+
 -v (second one) maps host data directory to container directory
+
 --name specifies the container "friendly" name
+
 -d tells docker to run the container in detached mode instead of interactive mode
+
 -config tells InfluxDB to use the config file at the container's mapped location
 
 ```docker run -p 8086:8086 -v /D/DockerShared/influxdb/config/influxdb.conf:/etc/influxdb/influxdb.conf:ro -v /D/DockerShared/influxdb/data:/var/lib/influxdb --name influxdb -d influxdb -config /etc/influxdb/influxdb.conf```
