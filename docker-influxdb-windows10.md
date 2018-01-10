@@ -6,7 +6,7 @@ Most of this was pulled from this [Docker Hub link](https://hub.docker.com/_/inf
 ### Install Docker for Windows, Configure for Linux Containers
 After install you should be able to run ```docker version``` in PowerShell and see a result similar to this:
 
-![alt text](docker_version.png "Docker Version results")
+![alt text](docker_version.png?raw=true "Docker Version results")
 
 ### Create the Directories for Your Container
 In my build I'm persisting the config file and the data files to directories on my Windows file system. I used this layout:
